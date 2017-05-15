@@ -1,0 +1,145 @@
+﻿@model JobPortal.Models.Employer
+
+@{
+    ViewBag.Title = "EmployerAccount";
+    dynamic message = ViewBag.message;
+}
+
+<h2>Create Employer Account</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div style="padding-left: 200px">
+
+            @if (!message.Equals("Create your account Successfully"))
+            {
+                <label style="color: red">
+                    @message
+                </label>
+            }
+            else
+            {
+                <label style="color: blue">
+                    @message
+                </label>
+            }
+
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CompanyName, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextBoxFor(model => model.CompanyName, new {@class = "form-control"})
+                @Html.ValidationMessageFor(model => model.CompanyName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ContactPersonName, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextBoxFor(model => model.ContactPersonName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ContactPersonName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ContactPersonDesignation, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextBoxFor(model => model.ContactPersonDesignation, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ContactPersonDesignation)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ContactPersonMobileNo, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextBoxFor(model => model.ContactPersonMobileNo, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ContactPersonMobileNo)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ContactPersonEmail, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextBoxFor(model => model.ContactPersonEmail, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ContactPersonEmail)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IndustryType, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextBoxFor(model => model.IndustryType, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.IndustryType)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Address, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextAreaFor(model => model.Address, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Address)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Website, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextBoxFor(model => model.Website, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Website)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Password)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ConfirmPassword, new {@class = "control-label col-md-3"})
+            <div class="col-md-13">
+                @Html.PasswordFor(model => model.ConfirmPassword, new {@class = "form-control"})
+                @Html.ValidationMessageFor(model => model.ConfirmPassword)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-3 col-md-10">
+                <input type="submit" value="Create Account" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to Home", "Index", "Home")
+</div>
+
+
+
+<style>
+    .field-validation-error {
+        color: red;
+        padding-left: 300px;
+    }
+</style>
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-3.1.0.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

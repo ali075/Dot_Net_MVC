@@ -1,0 +1,110 @@
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\JobPortal.dll.config
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\JobPortal.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\JobPortal.pdb
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Antlr3.Runtime.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\EntityFramework.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\EntityFramework.SqlServer.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Google.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Web.Infrastructure.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Newtonsoft.Json.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Owin.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.Helpers.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.Mvc.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.Optimization.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.Razor.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.WebPages.Deployment.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.WebPages.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.WebPages.Razor.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\WebGrease.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.Helpers.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.Mvc.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.Optimization.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.Razor.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.WebPages.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.WebPages.Deployment.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\System.Web.WebPages.Razor.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Newtonsoft.Json.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Antlr3.Runtime.pdb
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\EntityFramework.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\EntityFramework.SqlServer.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Google.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\obj\Debug\JobPortal.csprojResolveAssemblyReference.cache
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\obj\Debug\JobPortal.dll
+c:\users\tanvir\documents\visual studio 2013\Projects\JobPortal\JobPortal\obj\Debug\JobPortal.pdb
+E:\WORK\AOOP\JobPortal\JobPortal\bin\JobPortal.dll.config
+E:\WORK\AOOP\JobPortal\JobPortal\bin\JobPortal.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\JobPortal.pdb
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Antlr3.Runtime.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\EntityFramework.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\EntityFramework.SqlServer.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.AspNet.Identity.Core.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Cookies.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Facebook.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Google.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.OAuth.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Twitter.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Web.Infrastructure.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Newtonsoft.Json.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Owin.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.Helpers.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.Mvc.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.Optimization.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.Razor.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.WebPages.Deployment.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.WebPages.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.WebPages.Razor.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\WebGrease.dll
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Newtonsoft.Json.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.Helpers.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.Mvc.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.Optimization.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.Razor.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.WebPages.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.WebPages.Deployment.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\System.Web.WebPages.Razor.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Antlr3.Runtime.pdb
+E:\WORK\AOOP\JobPortal\JobPortal\bin\EntityFramework.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\EntityFramework.SqlServer.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.AspNet.Identity.Core.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Facebook.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Cookies.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.OAuth.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Google.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.Twitter.xml
+E:\WORK\AOOP\JobPortal\JobPortal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\WORK\AOOP\JobPortal\JobPortal\obj\Debug\JobPortal.csprojResolveAssemblyReference.cache
+E:\WORK\AOOP\JobPortal\JobPortal\obj\Debug\JobPortal.dll
+E:\WORK\AOOP\JobPortal\JobPortal\obj\Debug\JobPortal.pdb

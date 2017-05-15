@@ -1,0 +1,89 @@
+﻿@using JobPortal.Models
+@model IEnumerable<JobPortal.Models.AppliedJob>
+
+
+@{
+    ViewBag.Title = "AppliedCandidates";
+
+    dynamic employer = Session["user"] as Employer;
+
+    dynamic appliedCandidateList = ViewBag.candidateList;
+}
+
+<h2>Applied Candidates </h2>
+<h2> </h2>
+
+
+<table id="myTable" class="display">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.SeekerName)</th>
+            <th>@Html.DisplayNameFor(model => model.SeekerGender)</th>
+            <th>@Html.DisplayNameFor(model => model.AppliedTime)</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tfoot>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.SeekerName)</th>
+            <th>@Html.DisplayNameFor(model => model.SeekerGender)</th>
+            <th>@Html.DisplayNameFor(model => model.AppliedTime)</th>
+            <th></th>
+        </tr>
+    </tfoot>
+
+    <tbody>
+        @foreach (var item in appliedCandidateList)
+        {
+            <tr>
+                <td>@item.SeekerName</td>
+                <td>@item.SeekerGender</td>
+                <td>@item.AppliedTime</td>
+                
+
+                @if (employer != null)
+                {
+                    <td>
+                        
+                        @Html.ActionLink("Details", "ViewAppliedCandidatesDetails", new { id = item.AppliedJobID }) |
+                        @Html.ActionLink("Interested", "Delete", new {/* id=item.PrimaryKey */})
+                    </td>
+                }
+
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+
+
+<p>
+    @Html.ActionLink("Back to List", "ViewEmployerPostedJobs", "Job")
+</p>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+    <script src="~/Scripts/jquery-3.1.0.min.js"></script>
+    <script src="~/Scripts/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+
+
+}
+
+
+
+
+
+
+<script src="~/Scripts/bootstrap.min.js"></script>

@@ -1,0 +1,24 @@
+﻿@using JobPortal.Models;
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Home Page</h2>
+@{
+    dynamic seeker = Session["user"] as Seeker;
+    dynamic employer = Session["user"] as Employer;
+}
+
+@if (employer != null)
+    {
+        <h2>Welcome @employer.CompanyName</h2><br>
+        <h2>Welcome @employer.EmployerID</h2>  
+
+}
+else if(seeker != null){
+    <h2>Welcome @seeker.Name</h2>
+}
+
+
+

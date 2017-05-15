@@ -1,0 +1,97 @@
+﻿@using JobPortal.Models
+@model IEnumerable<JobPortal.Models.JobInfo>
+
+
+@{
+    ViewBag.Title = "Posted Jobs";
+
+    dynamic employer = Session["user"] as Employer;
+
+    dynamic jobInfoList = ViewBag.employerJobList;
+}
+
+<h2>View Posted Jobs</h2>
+<h2> </h2>
+
+<p>
+    @Html.ActionLink("Create New", "EmployerJobPost", "Job")
+</p>
+
+<table id="myTable" class="display" >
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.CompanyName)</th>
+            <th>@Html.DisplayNameFor(model => model.JobTitle)</th>
+            <th>@Html.DisplayNameFor(model => model.EducationalRequirements)</th>
+            <th>@Html.DisplayNameFor(model => model.ExperienceRequirements)</th>
+            <th>@Html.DisplayNameFor(model => model.ApplicationDeadline)</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tfoot>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.CompanyName)</th>
+            <th>@Html.DisplayNameFor(model => model.JobTitle)</th>
+            <th>@Html.DisplayNameFor(model => model.EducationalRequirements)</th>
+            <th>@Html.DisplayNameFor(model => model.ExperienceRequirements)</th>
+            <th>@Html.DisplayNameFor(model => model.ApplicationDeadline)</th>
+            <th></th>
+        </tr>
+    </tfoot>
+
+    <tbody>
+        @foreach (var item in jobInfoList)
+        {
+            <tr>
+                <td>@item.CompanyName</td>
+                <td>@item.JobTitle</td>
+                <td>@item.EducationalRequirements</td>
+                <td>@item.ExperienceRequirements</td>
+                <td>@item.ApplicationDeadline</td>
+
+                @if (employer != null)
+                {
+                    <td>
+                        @Html.ActionLink("Edit", "EmployerEditPostedJobs", new { id = item.JobID }) |
+                        @Html.ActionLink("Details", "ViewDetailPostedJobs", new { id = item.JobID }) |
+                        @Html.ActionLink("Applied Candidates", "ViewAppliedCandidates", new { id = item.JobID })
+                    </td>
+                }
+
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+
+
+<p>
+    @Html.ActionLink("Back to Home", "Index", "Home")
+</p>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+    <script src="~/Scripts/jquery-3.1.0.min.js"></script>
+    <script src="~/Scripts/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+    
+
+}
+
+
+
+
+
+
+<script src="~/Scripts/bootstrap.min.js"></script>

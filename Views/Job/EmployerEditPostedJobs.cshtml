@@ -1,0 +1,176 @@
+﻿@using JobPortal.Models
+@model JobPortal.Models.JobInfo
+
+@{
+    dynamic employer = Session["user"] as Employer;
+    
+    ViewBag.Title = "Edit Posted Jobs";
+    dynamic message = ViewBag.message;
+    dynamic jobInfoList = ViewBag.jobDetails;
+}
+
+<h2>@employer.CompanyName</h2>
+<h2>Edit Your Posted Jobs</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div style="padding-left: 200px">
+
+            @if (!message.Equals("Job Updated Successfully"))
+            {
+                <label style="color: red">
+                    @message
+                </label>
+            }
+            else
+            {
+                <label style="color: blue">
+                    @message
+                </label>
+            }
+
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.JobTitle, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextBoxFor(model => model.JobTitle, new { @class = "form-control", @Value = @jobInfoList[0].JobTitle })
+                @Html.ValidationMessageFor(model => model.JobTitle)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.JobDescription, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextAreaFor(model => model.JobDescription, new { @class = "form-control", @Value = @jobInfoList[0].JobDescription })
+                @Html.ValidationMessageFor(model => model.JobDescription)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.JobNature, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextBoxFor(model => model.JobNature, new { @class = "form-control", @Value = @jobInfoList[0].JobNature })
+                @Html.ValidationMessageFor(model => model.JobNature)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EducationalRequirements, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextAreaFor(model => model.EducationalRequirements, new { @class = "form-control", id = "educationalRequirements", @value = @jobInfoList[0].EducationalRequirements })
+                @Html.ValidationMessageFor(model => model.EducationalRequirements)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ExperienceRequirements, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextAreaFor(model => model.ExperienceRequirements, new { @class = "form-control", id = "experienceRequirements" })
+                @Html.ValidationMessageFor(model => model.ExperienceRequirements)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AdditionalRequirements, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextAreaFor(model => model.AdditionalRequirements, new { @class = "form-control", id = "additionalRequirements" })
+                @Html.ValidationMessageFor(model => model.AdditionalRequirements)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NoOfVacancies, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextBoxFor(model => model.NoOfVacancies, new { @class = "form-control", @Value = @jobInfoList[0].NoOfVacancies })
+                @Html.ValidationMessageFor(model => model.NoOfVacancies)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SalaryRange, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextBoxFor(model => model.SalaryRange, new { @class = "form-control", @Value = @jobInfoList[0].SalaryRange })
+                @Html.ValidationMessageFor(model => model.SalaryRange)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.OtherBenefit, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextAreaFor(model => model.OtherBenefit, new { @class = "form-control", id = "OtherBenefit" })
+                @Html.ValidationMessageFor(model => model.OtherBenefit)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ApplicationDeadline, new { @class = "control-label col-md-3" })
+            <div class="col-md-13">
+                @Html.TextBoxFor(model => model.ApplicationDeadline, new { @class = "form-control", id = "date-picker" })
+                @Html.ValidationMessageFor(model => model.ApplicationDeadline)
+            </div>
+        </div>
+
+        
+        <div class="form-group">
+            <div class="col-md-offset-3 col-md-10">
+                <input type="submit" value="Update" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "ViewEmployerPostedJobs", "Job")
+</div>
+
+<style>
+    .field-validation-error {
+        color: red;
+        padding-left: 300px;
+    }
+</style>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Styles.Render("~/Content/cssjqryUi")
+
+
+
+    <script type="text/javascript">
+
+    $(function () {
+        $('#date-picker')
+            .datepicker(
+                {
+                    dateFormat: "dd/M/yy",
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: "-0:+10"
+                }
+            );
+
+    });
+
+    </script>
+
+
+
+
+
+
+}
+
+<link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-3.1.0.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

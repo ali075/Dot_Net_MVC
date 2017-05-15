@@ -1,0 +1,133 @@
+﻿@using System.Globalization
+@using System.Web.Mvc.Html
+@using JobPortal.Models
+@model JobPortal.Models.JobInfo
+
+@{
+    ViewBag.Title = "ViewDetailPostedJobs";
+    dynamic jobInfoList = ViewBag.jobDetails;
+    //dynamic employer = Session["user"] as Employer;
+    
+}
+
+<h2>View Detail Posted Jobs</h2>
+
+
+<div style="margin-left: 100px">
+    
+    <hr/>
+    <dl>
+
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.JobTitle)
+        </dt>
+        <dd>
+            @jobInfoList[0].JobTitle
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+        <dd>
+            @jobInfoList[0].CompanyName
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfVacancies)
+        </dt>
+        <dd>
+            @jobInfoList[0].NoOfVacancies
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobDescription)
+        </dt>
+        <dd>
+            @jobInfoList[0].JobDescription
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobNature)
+        </dt>
+        <dd>
+            @jobInfoList[0].JobNature
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EducationalRequirements)
+        </dt>
+        <dd>
+            @jobInfoList[0].EducationalRequirements
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExperienceRequirements)
+        </dt>
+        <dd>
+            @jobInfoList[0].ExperienceRequirements
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdditionalRequirements)
+        </dt>
+        <dd>
+            @jobInfoList[0].AdditionalRequirements
+        </dd>
+
+        
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SalaryRange)
+        </dt>
+        <dd>
+            @jobInfoList[0].SalaryRange
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OtherBenefit)
+        </dt>
+        <dd>
+            @jobInfoList[0].OtherBenefit
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationDeadline)
+        </dt>
+        <dd>
+            @jobInfoList[0].ApplicationDeadline.ToString("dd/M/yyyy", CultureInfo.InvariantCulture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublishTime)
+        </dt>
+        <dd>
+            @jobInfoList[0].PublishTime.ToString("dd/M/yyyy", CultureInfo.InvariantCulture)
+        </dd>
+
+        
+
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Back to List", "ViewAllPostedJobs", "Job")
+</p>
+
+<style>
+    dt {
+        font-weight: bold;
+        text-decoration: underline;
+        font-weight: bold;
+        color: green;
+    }
+
+    dd {
+        margin: 0;
+        padding: 0 0 0.5em 0;
+    }
+
+</style>
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-3.1.0.min.js"></script>

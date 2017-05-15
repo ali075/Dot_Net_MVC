@@ -1,0 +1,94 @@
+﻿@using JobPortal.Models
+@model IEnumerable<JobPortal.Models.AppliedJob>
+
+
+@{
+    ViewBag.Title = "AppliedJobs";
+
+    dynamic seeker = Session["user"] as Seeker;
+
+    dynamic jobInfoList = ViewBag.jobDetails;
+}
+
+
+<h2>View Applied Jobs</h2>
+<h2> @seeker.Name</h2>
+
+<table id="myTable" class="display">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.CompanyName)</th>
+            <th>@Html.DisplayNameFor(model => model.JobTitle)</th>
+            <th>@Html.DisplayNameFor(model => model.EducationalRequirements)</th>
+            <th>@Html.DisplayNameFor(model => model.ExperienceRequirements)</th>
+            <th>@Html.DisplayNameFor(model => model.ApplicationDeadline)</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tfoot>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.CompanyName)</th>
+            <th>@Html.DisplayNameFor(model => model.JobTitle)</th>
+            <th>@Html.DisplayNameFor(model => model.EducationalRequirements)</th>
+            <th>@Html.DisplayNameFor(model => model.ExperienceRequirements)</th>
+            <th>@Html.DisplayNameFor(model => model.ApplicationDeadline)</th>
+            <th></th>
+        </tr>
+    </tfoot>
+
+    <tbody>
+        @foreach (var item in jobInfoList)
+        {
+            <tr>
+                <td>@item.CompanyName</td>
+                <td>@item.JobTitle</td>
+                <td>@item.EducationalRequirements</td>
+                <td>@item.ExperienceRequirements</td>
+                <td>@item.ApplicationDeadline</td>
+
+                @if (seeker != null)
+                {
+                    <td>
+                        
+                        @Html.ActionLink("Details", "ViewDetailPostedJobs", new { id = item.JobID }) 
+                        
+                    </td>
+                }
+
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+
+
+<p>
+    @Html.ActionLink("Back to Home", "Index", "Home")
+</p>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+    <script src="~/Scripts/jquery-3.1.0.min.js"></script>
+    <script src="~/Scripts/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+
+
+}
+
+
+
+
+
+
+<script src="~/Scripts/bootstrap.min.js"></script>

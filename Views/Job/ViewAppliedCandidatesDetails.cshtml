@@ -1,0 +1,94 @@
+﻿@using System.Globalization
+@using System.Web.Mvc.Html
+@using JobPortal.Models
+@model JobPortal.Models.AppliedJob
+
+@{
+    ViewBag.Title = "ViewCandidateDetails";
+    dynamic candidateInfo = ViewBag.candidateList;
+    //dynamic employer = Session["user"] as Employer;
+
+}
+
+<h2>View Candidate Details</h2>
+
+
+<div style="margin-left: 100px">
+
+    <hr />
+    <dl>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeekerName)
+        </dt>
+        <dd>
+            @candidateInfo[0].SeekerName
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeekerGender)
+        </dt>
+        <dd>
+            @candidateInfo[0].SeekerGender
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeekerAddress)
+        </dt>
+        <dd>
+            @candidateInfo[0].SeekerAddress
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeekerEmail)
+        </dt>
+        <dd>
+            @candidateInfo[0].SeekerEmail
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CoverLetter)
+        </dt>
+        <dd>
+            @candidateInfo[0].CoverLetter
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppliedTime)
+        </dt>
+        <dd>
+            @candidateInfo[0].AppliedTime
+        </dd>
+
+        <dt>
+            
+        </dt>
+        <dd>
+            @Html.ActionLink("Download Candidate Resume", "DownloadResume", new { id = candidateInfo[0].SeekerID, name = candidateInfo[0].SeekerName, applyId = candidateInfo[0].AppliedJobID })
+        </dd>
+
+
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("All Your Posted Jobs", "ViewEmployerPostedJobs", "Job")
+</p>
+
+<style>
+    dt {
+        font-weight: bold;
+        text-decoration: underline;
+        font-weight: bold;
+        color: green;
+    }
+
+    dd {
+        margin: 0;
+        padding: 0 0 0.5em 0;
+    }
+</style>
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-3.1.0.min.js"></script>
